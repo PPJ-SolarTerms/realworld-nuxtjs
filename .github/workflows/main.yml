@@ -18,7 +18,7 @@ jobs:
       uses: actions/setup-node@master
     - run: npm install
     - run: npm run build
-    - run: tar -zcvf release.tgz .nuxt static plugins pages store utils api middleware nuxt.config.js package.json package-lock.json pm2.config.json app.html README.md
+    - run: tar -zcvf release.tgz static plugins pages store utils api middleware nuxt.config.js package.json package-lock.json pm2.config.json app.html README.md
 
     # 发布 Release
     - name: Create Release
