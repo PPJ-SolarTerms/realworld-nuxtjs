@@ -21,7 +21,7 @@ jobs:
         node-version: '16.x'
     - run: npm install
     #- run: npm run build
-    - run: tar -zcvf release.tgz .nuxt api middleware pages plugins static store utils app.html nuxt.config.js package.json package-lock.json pm2.config.json README.md
+    - run: tar -zcvf release.tgz api middleware pages plugins static store utils app.html nuxt.config.js package.json package-lock.json pm2.config.json README.md
 
     # 发布 Release
     - name: Create Release
