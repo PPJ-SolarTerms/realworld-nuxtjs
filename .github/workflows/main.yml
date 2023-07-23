@@ -15,7 +15,10 @@ jobs:
 
     # 打包构建
     - name: Build
-      uses: actions/setup-node@master
+      #uses: actions/setup-node@master
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16.x'
     - run: npm install
     - run: npm run build
     - run: tar -zcvf release.tgz .nuxt api middleware pages plugins static store utils app.html nuxt.config.js package.json package-lock.json pm2.config.json README.md
